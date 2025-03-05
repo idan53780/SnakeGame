@@ -1,0 +1,105 @@
+﻿<Window x:Class="Snake_v1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Snake_v1"
+        mc:Ignorable="d"
+        Title="Snake" Height="500" Width="800"
+        MinWidth="300" MinHeight="300"
+        Foreground="{StaticResource TextColor}"
+        FontFamily="{StaticResource MainFont}"
+        WindowStartupLocation="CenterScreen"
+        Icon = "Assets/icon.ico"
+        PreviewKeyDown="Window_PreviewKeyDown"
+        KeyDown="Window_KeyDown">
+    <Window.Background>
+        <ImageBrush ImageSource="Assets/Forest.jpg"/>
+    </Window.Background>
+ 
+    <Viewbox >
+        <Viewbox.OpacityMask>
+            <ImageBrush ImageSource="Assets/Forest.jpg"/>
+        </Viewbox.OpacityMask>
+        <Grid Height="409">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="238*"/>
+                <ColumnDefinition Width="207*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="193*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="205*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="ScoreText"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Text=" Score:
+
+                       High Score:"
+                   FontSize="21"
+                   Margin="-127,11,0,0" Background="#FF00725F" FontFamily="Jokerman" TextWrapping="Wrap" Grid.Row="1" Width="160" Opacity="0.9" FontWeight="Bold" Height="78"/>
+            <Border x:Name="GridBorder"
+                Grid.Row="1"
+                BorderBrush="{StaticResource GridLineColor}"
+                BorderThickness="1.5"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                RenderOptions.EdgeMode="Aliased"
+                Margin="50,30,0,0" Grid.ColumnSpan="2" Grid.RowSpan="3" Height="373" Width="373">
+
+                <UniformGrid x:Name="GameGrid"
+                          Width="370"
+                          Height="370"
+                          Background="{StaticResource GridBackgroundColor}"
+                          SnapsToDevicePixels = "True"
+                         RenderOptions.BitmapScalingMode="HighQuality">
+                </UniformGrid>
+
+            </Border>
+
+
+            <Border x:Name="Overlay"
+                    Grid.Row="1"
+                    Margin="50,20,10,21"
+                    RenderOptions.EdgeMode="Aliased" Grid.ColumnSpan="2" Grid.RowSpan="3">
+                <TextBlock x:Name="OverlayText"
+                           Text="PRESS ANY KEY TO START"
+                           FontSize="26"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           TextWrapping="Wrap" FontFamily="Jokerman" Margin="12,0,0,0"/>
+
+            </Border>
+            <Button x:Name="Pause_Button" Content="PAUSE" Margin="-126,0,388,21" Grid.Row="3" Click="Button_Click" BorderBrush="Silver" FontFamily="Jokerman" Foreground="Goldenrod" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" Height="34" VerticalAlignment="Bottom">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="-0.098"/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.Background>
+                    <SolidColorBrush Color="#FF005050" Opacity="0.8"/>
+                </Button.Background>
+            </Button>
+            <Border x:Name="Score_Border" BorderBrush="Silver" BorderThickness="1,1,1,1" HorizontalAlignment="Left" Height="78" VerticalAlignment="Top" Width="160" Margin="-127,11,0,0" Grid.Row="1" RenderTransformOrigin="0.5,0.5">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0"/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+
+            <Button Content="Reset High Score" 
+                    Click="ResetHighScore_Click" Margin="-127,93,347,0" Grid.RowSpan="2" Background="#FF067358" BorderBrush="Silver" Foreground="#FFCE9C22" FontFamily="Jokerman" FontWeight="Bold" Height="33" VerticalAlignment="Top" />
+
+        </Grid>
+    </Viewbox>
+</Window>
