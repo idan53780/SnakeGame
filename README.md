@@ -9,7 +9,9 @@ used by this guide : https://www.youtube.com/watch?v=uzAXxFBbVoE&t=5s&ab_channel
 
 ## How to Play
 Use the arrow keys to move the snake and eat food to grow.
+
 Press space to puse the game or click "PUSE"
+
 Rest High Score by click "RESET"
 
 ## Installation
