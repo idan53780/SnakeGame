@@ -15,4 +15,4 @@ Press space to puse the game or click "PUSE"
 Rest High Score by click "RESET"
 
 ## Installation
-
+download exe file named setup.
