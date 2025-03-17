@@ -1,22 +1,22 @@
-## Snake Game in C# ##
+## 🐍 Snake Game in C# ##
 This simple Snake Game was built using C# and Visual Studio 2022.
 used by this guide: https://www.youtube.com/watch?v=uzAXxFBbVoE&t=5s&ab_channel=OttoBotCode
 
-## Features ##
+## ✨ Features ##
 - Classic snake movement
 - Score tracking
 - Game over conditions
 
-## How to Play
+## 🕹️ How to Play
 Use the arrow keys to move the snake and eat food to grow.
 
 Press space to pause the game or click "PAUSE"
 
 Rest High Score by clicking "RESET"
 
-## Installation
+## 💾 Installation
 download the setup folder and install the exe file
 
-### CODE ###
+### 🧑‍💻 CODE ###
 
-To check the code, just download the repository and open it in Visual Studio IDE
+To check the code, just download the repository and open it in Visual Studio IDE OR clone the Rep 
