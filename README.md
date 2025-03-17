@@ -16,6 +16,7 @@ Reset High Score by clicking "RESET"
 
 ## 💾 Installation
 download the setup folder and install the exe file
+you can find the setup folder inside the publish folder
 
 
 ### 🧑‍💻 CODE 
