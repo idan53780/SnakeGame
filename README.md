@@ -17,6 +17,7 @@ Rest High Score by clicking "RESET"
 ## 💾 Installation
 download the setup folder and install the exe file
 
-### 🧑‍💻 CODE ###
+
+### 🧑‍💻 CODE 
 
 To check the code, just download the repository and open it in Visual Studio IDE OR clone the Rep 
