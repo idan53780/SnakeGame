@@ -15,8 +15,8 @@ Press space to pause the game or click "PAUSE"
 Reset High Score by clicking "RESET"
 
 ## 💾 Installation
-download the setup folder and install the exe file
-you can find the setup folder inside the publish folder
+download the setup folder and install the exe file ** inside the folder **
+- you can find the setup folder inside the publish folder
 
 
 ### 🧑‍💻 CODE 
